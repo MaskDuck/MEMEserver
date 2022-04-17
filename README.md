@@ -13,7 +13,7 @@ this MEMEserver serve all types of MEMEs!
 2. Write an handler for the meme. Here's an example:
    ```
    async def wikipedia(scope):
-       return FileResponse('memes/wikipedia.png')
+       return FileResponse('memeserver/memes/wikipedia.png')
    ```
 3. Add the handler to the global list of scope.
 4. Submit a PR.

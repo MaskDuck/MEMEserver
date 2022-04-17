@@ -6,16 +6,16 @@ from starlette.responses import FileResponse
 
 
 async def luonleo(scope):
-    return FileResponse('memes/luonleo.jpeg')
+    return FileResponse('memeserver/memes/luonleo.jpeg')
 
 async def wikipedia(scope):
-    return FileResponse('memes/wikipedia.png')
+    return FileResponse('memeserver/memes/wikipedia.png')
 
 async def no_bitches(scope):
-    return FileResponse('memes/no-bitches.jpeg')
+    return FileResponse('memeserver/memes/no-bitches.jpeg')
 
 async def tias(scope):
-    return FileResponse('memes/tias.mp4')
+    return FileResponse('memeserver/memes/tias.mp4')
 
 
 routes = [

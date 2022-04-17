@@ -11,10 +11,19 @@ async def luonleo(scope):
 async def wikipedia(scope):
     return FileResponse('memes/wikipedia.png')
 
+async def no_bitches(scope):
+    return FileResponse('memes/no-bitches.jpeg')
+
+async def tias(scope):
+    return FileResponse('memes/tias.mp4')
+
 
 routes = [
     Route("/luonleo", luonleo, methods=["GET", "POST", "PUT"]),
-    Route("/wikipedia", wikipedia, methods=['GET', "POST", "PUT"])]
+    Route("/wikipedia", wikipedia, methods=['GET', "POST", "PUT"]),
+    Route("/no-bitches", no_bitches, methods=['GET', "POST", "PUT"]),
+    Route('/tias', tias, methods=['GET', "POST", "PUT"])
+]
 
 app = Starlette(routes=routes)
 
